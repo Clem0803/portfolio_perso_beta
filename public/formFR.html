@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/code-solid.png">
+    <title>Contactez-moi</title>
+    <script src="https://kit.fontawesome.com/8632e6c968.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <!--Création menu de navigation-->
+        <span class="change-lang">See the form in <br><a class="lien-lang" href="formEN.html" >English (en)</a></span>
+        <div class="container">
+            <div class="nav-bar">
+                <ul>
+                    <li style="float: left;"><a class="bCV" href="../doc/cv_portfolio.pdf" target="_blank">Mon CV</a></li>
+                    <li class="box-logo">
+                        <a class="logo-nav-bar" href="../index.html"><img class="logo-nav" src="../img/code-solid.png"></a>
+                    </li>
+                    <li style="float: right;"><a class="bContact" href="../public/formFR.html">Envie de discuter ?</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="texte-hero">
+        <!--Création texte présentation-->
+        <div class="container">
+            <div class="text-emp">
+                <h1 class="titre-hero">Une question ou besoin de plus de renseignements ?</h1>
+                <h2 class="sous-titre-hero">Envoyez-moi un mail et je vous répondrai dans les plus brefs délais !</h2>
+            </div>
+        </div>
+    </div>
+    <!--Création formulaire de contact-->
+    <!--Champ à mettre : NOM*, Prenom*, Mail*, Objet*, Message*, -->
+    <form name="contact" method="POST" data-netlify="true">
+        <p class="require">
+            Les champs marqués d'une "*" sont obligatoires
+        </p>
+        <p>
+            <label class="lChamp">NOM*</label>
+            <label class="champ">Prénom*</label>
+        </p>
+        <p>
+            <input class="lChamp" name="nom" required>
+            <input class="champ" name="prenom" required>
+        </p>
+        <p>
+            <label class="lChamp">Email*</label><br>
+            <input type="email" class="champ" name="email" required>
+        </p>
+        <p>
+            <label class="lChamp">Objet*</label><br>
+            <input class="champ" name="objet" required>
+        </p>
+        <p>
+            <label class="lChamp">Message*</label><br>
+            <textarea class="champMsg" name="msg" required></textarea>
+        </p>
+        <p>
+            <button type="submit">Envoyer</button>
+        </p>
+    </form>
+</body>
+<footer>
+    <div class="container">
+        <div class="footer-box">
+            <div class="logo-box">
+                <a class="accueil" href="../index.html">
+                    <img class="logo" src="../img/code-solid.png">
+                </a>
+            </div>
+            <div class="list-icones">
+                <div class="icone">
+                    <a class="lien-icone" href="mailto:clement.pujol08@gmail.com">
+                        <span class="i-footer"><i class="fas fa-paper-plane"></i></span>
+                    </a>
+                </div>
+                <div class="icone">
+                    <a class="lien-icone" href="https://www.linkedin.com/in/clement-pujol/" target="_blank">
+                        <span class="i-footer"><i class="fab fa-linkedin-in"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="info">
+                <span class="mail">Mon mail : clement.pujol08@gmail.com</span>
+                <br>
+                <span class="copyright">©  2020 PUJOL Clément</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
