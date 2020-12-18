@@ -94,7 +94,7 @@ ul {
 li a {
     /*Design bouton en-tête*/
     display: inline-block;
-    color: black;
+    color: #00faaa;
     text-align: center;
     padding: 0.875rem 2.5rem;
     text-decoration: none;
@@ -116,7 +116,27 @@ li a {
     border-style: solid;
     border-radius: 30px;
     border-color: #00faaa;
+    transition-duration: 0.3s;
+}
+
+.bForm {
+    /*Design bouton envoyer formulaire contact*/
+    display: inline-block;
     color: #00faaa;
+    background-color: #fff;
+    padding: 0.875rem 2.5rem;
+    text-decoration: none;
+    font-size: 18px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #00faaa;
+    transition-duration: 0.3s;
+}
+
+.bForm:hover {
+    /*Design bouton envoyer formulaire contact au survol*/
+    background-color: #00faaa;
+    color: #fff;
     transition-duration: 0.3s;
 }
 

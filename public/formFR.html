@@ -21,7 +21,7 @@
                     <li class="box-logo">
                         <a class="logo-nav-bar" href="../index.html"><img class="logo-nav" src="../img/code-solid.png"></a>
                     </li>
-                    <li style="float: right;"><a class="bContact" href="../public/formFR.html">Envie de discuter ?</a></li>
+                    <li style="float: right;"><a class="bContact" style="color: #fff; background-color: #00faaa;" href="../public/formFR.html">Envie de discuter ?</a></li>
                 </ul>
             </div>
         </div>
@@ -37,33 +37,39 @@
     </div>
     <!--Création formulaire de contact-->
     <!--Champ à mettre : NOM*, Prenom*, Mail*, Objet*, Message*, -->
-    <form name="contact" method="POST" data-netlify="true">
-        <p class="require">
+    <form name="contact" method="POST" data-netlify="true" style="text-align: center;">
+        <div class="require">
             Les champs marqués d'une "*" sont obligatoires
-        </p>
-        <p>
-            <label class="lChamp">NOM*</label>
-            <label class="champ">Prénom*</label>
-        </p>
-        <p>
-            <input class="lChamp" name="nom" required>
-            <input class="champ" name="prenom" required>
-        </p>
-        <p>
-            <label class="lChamp">Email*</label><br>
-            <input type="email" class="champ" name="email" required>
-        </p>
-        <p>
-            <label class="lChamp">Objet*</label><br>
-            <input class="champ" name="objet" required>
-        </p>
-        <p>
-            <label class="lChamp">Message*</label><br>
+        </div>
+
+        <div class="divChamp">
+            <label class="lChampName">NOM*</label>
+            <label class="lchampName">Prénom*</label>
+        </div>
+
+        <div class="divChamp">
+            <input class="champName" name="nom" required>
+            <input class="champName" name="prenom" required>
+        </div>
+
+        <div class="divChamp">
+            <label class="lChampEmail">Email*</label><br>
+            <input type="email" class="champEmail" name="email" required>
+        </div>
+
+        <div class="divChamp">
+            <label class="lChampObj">Objet*</label><br>
+            <input class="champObj" name="objet" required>
+        </div>
+
+        <div class="divChamp">
+            <label class="lChampMsg">Message*</label><br>
             <textarea class="champMsg" name="msg" required></textarea>
-        </p>
-        <p>
-            <button type="submit">Envoyer</button>
-        </p>
+        </div>
+
+        <div class="divButton">
+            <button class="bForm" type="submit">Envoyer</button>
+        </div>
     </form>
 </body>
 <footer>
