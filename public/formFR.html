@@ -37,38 +37,33 @@
     </div>
     <!--Création formulaire de contact-->
     <!--Champ à mettre : NOM*, Prenom*, Mail*, Objet*, Message*, -->
-    <form name="contact" method="POST" data-netlify="true" style="text-align: center;">
-        <div class="require">
-            Les champs marqués d'une "*" sont obligatoires
-        </div>
+    <form name="contact" method="POST" data-netlify="true">
+        <div class="container">
+            <div class="champForm">
+                <div class="require">
+                    Les champs marqués d'une "*" sont obligatoires
+                </div>
 
-        <div class="divChamp">
-            <label class="lChampName">NOM*</label>
-            <label class="lchampName">Prénom*</label>
-        </div>
+                <div class="divChampNameL">
+                    <label class="lChampName">NOM*</label><br>
+                    <input class="champName" name="nom" required>
+                </div>
 
-        <div class="divChamp">
-            <input class="champName" name="nom" required>
-            <input class="champName" name="prenom" required>
-        </div>
+                <div class="divChampNameR">
+                    <label class="lchampName">Prénom*</label><br>
+                    <input class="champName" name="prenom" required>
+                </div>
 
-        <div class="divChamp">
-            <label class="lChampEmail">Email*</label><br>
-            <input type="email" class="champEmail" name="email" required>
-        </div>
+                <div class="divChamp">
+                    <label class="lChampEmail">Email*</label><br>
+                    <input type="email" class="champEmail" name="email" required>
+                </div>
 
-        <div class="divChamp">
-            <label class="lChampObj">Objet*</label><br>
-            <input class="champObj" name="objet" required>
-        </div>
+            </div>
 
-        <div class="divChamp">
-            <label class="lChampMsg">Message*</label><br>
-            <textarea class="champMsg" name="msg" required></textarea>
-        </div>
-
-        <div class="divButton">
-            <button class="bForm" type="submit">Envoyer</button>
+            <div class="divButtonForm">
+                <button class="bForm" type="submit">Envoyer</button>
+            </div>
         </div>
     </form>
 </body>
