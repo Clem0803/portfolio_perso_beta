@@ -119,27 +119,6 @@ li a {
     transition-duration: 0.3s;
 }
 
-.bForm {
-    /*Design bouton envoyer formulaire contact*/
-    display: inline-block;
-    color: #00faaa;
-    background-color: #fff;
-    padding: 0.875rem 2.5rem;
-    text-decoration: none;
-    font-size: 18px;
-    border-style: solid;
-    border-radius: 30px;
-    border-color: #00faaa;
-    transition-duration: 0.3s;
-}
-
-.bForm:hover {
-    /*Design bouton envoyer formulaire contact au survol*/
-    background-color: #00faaa;
-    color: #fff;
-    transition-duration: 0.3s;
-}
-
 .bContact:hover,
 .bCV:hover {
     /*Design boutons en-tête au survol*/
@@ -165,6 +144,63 @@ li a {
 .lien-lang {
     text-decoration: none;
     color: #003afa;
+}
+
+
+/*Mise en forme du footer*/
+
+footer {
+    background-color: #003afa;
+    height: 20rem;
+}
+
+.list-icones {
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 0;
+}
+
+.icone {
+    font-size: 24px;
+    display: inline-block;
+    border: solid white;
+    margin: 0.5rem;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    transition: .3s ease-in-out;
+    color: white;
+}
+
+.i-footer {
+    color: inherit;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.icone:hover {
+    background-color: white;
+    color: #003afa;
+}
+
+.i-footer:hover {
+    color: inherit;
+    transition: .3s ease-in-out;
+}
+
+.lien-icone {
+    color: inherit;
+}
+
+.info {
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    line-height: 2;
 }
 
 
@@ -383,58 +419,72 @@ figure {
 }
 
 
-/*Mise en forme du footer*/
+/*Mise en forme du formulaire*/
 
-footer {
-    background-color: #003afa;
-    height: 20rem;
-}
-
-.list-icones {
+form {
+    /*Design formulaire*/
     text-align: center;
 }
 
-.logo {
+.bForm {
+    /*Design bouton envoyer formulaire contact*/
+    display: inline-block;
+    color: #00faaa;
+    background-color: #fff;
+    padding: 0.875rem 2.5rem;
+    text-decoration: none;
+    font-size: 18px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #00faaa;
+    transition-duration: 0.3s;
+}
+
+.bForm:hover {
+    /*Design bouton envoyer formulaire contact au survol*/
+    background-color: #00faaa;
+    color: #fff;
+    transition-duration: 0.3s;
+}
+
+.champForm {
+    /*Design champ du formulaire*/
+    font-size: 20px;
+    text-align: inherit;
+    background-color: rgba(243, 236, 236, 0.541);
+    width: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 3rem 0;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 2px rgba(46, 46, 46, 0.2);
+    padding: 1.5rem 0;
 }
 
-.icone {
-    font-size: 24px;
-    display: inline-block;
-    border: solid white;
-    margin: 0.5rem;
-    border-radius: 100px;
-    height: 50px;
-    width: 50px;
-    transition: .3s ease-in-out;
-    color: white;
+.divButtonForm {
+    /*Design bouton du formulaire*/
+    padding: 1.5rem 0;
 }
 
-.i-footer {
-    color: inherit;
-    vertical-align: -webkit-baseline-middle;
+.require {
+    /*Design div du formulaire*/
+    padding: 0 0 0.5rem 0.8rem;
+    font-size: 12px;
+    text-align: left;
 }
 
-.icone:hover {
-    background-color: white;
-    color: #003afa;
+.divChampNameL {
+    width: 50%;
+    float: left;
+    margin: 1rem 0;
 }
 
-.i-footer:hover {
-    color: inherit;
-    transition: .3s ease-in-out;
+.divChampNameR {
+    width: 50%;
+    float: right;
+    margin: 1rem 0;
 }
 
-.lien-icone {
-    color: inherit;
-}
-
-.info {
-    margin-top: 2rem;
-    text-align: center;
-    color: white;
-    line-height: 2;
+.divChamp {
+    margin-bottom: 1rem;
 }
