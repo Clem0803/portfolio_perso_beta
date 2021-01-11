@@ -12,7 +12,7 @@
 
 <body>
     <nav>
-        <!--Création menu de navigation-->
+        <!-- Création menu de navigation -->
         <span class="change-lang">See the form in <br><a class="lien-lang" href="formEN.html" >English (en)</a></span>
         <div class="container">
             <div class="nav-bar">
@@ -27,7 +27,7 @@
         </div>
     </nav>
     <div class="texte-hero">
-        <!--Création texte présentation-->
+        <!-- Création texte présentation -->
         <div class="container">
             <div class="text-emp">
                 <h1 class="titre-hero">Une question ou besoin de plus de renseignements ?</h1>
@@ -36,33 +36,41 @@
         </div>
     </div>
     <!--Création formulaire de contact-->
-    <!--Champ à mettre : NOM*, Prenom*, Mail*, Objet*, Message*, -->
     <form name="contact" method="POST" data-netlify="true">
         <div class="container">
             <div class="champForm">
                 <div class="require">
-                    Les champs marqués d'une "*" sont obligatoires
+                    Tous les champs sont requis afin que je puisse répondre au mieux à votre demande
                 </div>
 
                 <div class="divChampNameL">
-                    <label class="lChampName">NOM*</label><br>
+                    <label class="lChampName">NOM</label><br>
                     <input class="champName" name="nom" required>
                 </div>
 
                 <div class="divChampNameR">
-                    <label class="lchampName">Prénom*</label><br>
+                    <label class="lchampName">Prénom</label><br>
                     <input class="champName" name="prenom" required>
                 </div>
 
                 <div class="divChamp">
-                    <label class="lChampEmail">Email*</label><br>
+                    <label class="lChampEmail">Email</label><br>
                     <input type="email" class="champEmail" name="email" required>
                 </div>
 
-            </div>
+                <div class="divObj">
+                    <label class="lChampObj">Objet</label><br>
+                    <input class="champObj" name="objet" require>
+                </div>
 
-            <div class="divButtonForm">
-                <button class="bForm" type="submit">Envoyer</button>
+                <div class="divTextArea">
+                    <label class="lTextArea">Message</label><br>
+                    <textarea name="message" rows="10" required></textarea>
+                </div>
+
+                <div class="divButtonForm">
+                    <button class="bForm" type="submit">Envoyer</button>
+                </div>
             </div>
         </div>
     </form>

@@ -36,34 +36,43 @@
         </div>
     </div>
     <!--Création formulaire de contact-->
-    <!--Champ à mettre : NOM*, Prenom*, Mail*, Objet*, Message*, -->
     <form name="contact" method="POST" data-netlify="true">
-        <p class="require">
-            Fields mark by "*" are require
-        </p>
-        <p>
-            <label class="lChamp">NAME*</label>
-            <label class="champ">Surname*</label>
-        </p>
-        <p>
-            <input class="lChamp" name="nom" required>
-            <input class="champ" name="prenom" required>
-        </p>
-        <p>
-            <label class="lChamp">Email*</label><br>
-            <input type="email" class="champ" name="email" required>
-        </p>
-        <p>
-            <label class="lChamp">Object*</label><br>
-            <input class="champ" name="objet" required>
-        </p>
-        <p>
-            <label class="lChamp">Message*</label><br>
-            <textarea class="champMsg" name="msg" required></textarea>
-        </p>
-        <p>
-            <button class="bForm" type="submit">Send</button>
-        </p>
+        <div class="container">
+            <div class="champForm">
+                <div class="require">
+                    All fields are required so that I can best answer your request
+                </div>
+
+                <div class="divChampNameL">
+                    <label class="lChampName">Name</label><br>
+                    <input class="champName" name="nom" required>
+                </div>
+
+                <div class="divChampNameR">
+                    <label class="lchampName">Surname</label><br>
+                    <input class="champName" name="prenom" required>
+                </div>
+
+                <div class="divChamp">
+                    <label class="lChampEmail">E-mail</label><br>
+                    <input type="email" class="champEmail" name="email" required>
+                </div>
+
+                <div class="divObj">
+                    <label class="lChampObj">Object</label><br>
+                    <input class="champObj" name="objet" require>
+                </div>
+
+                <div class="divTextArea">
+                    <label class="lTextArea">Message</label><br>
+                    <textarea name="message" rows="10" required></textarea>
+                </div>
+
+                <div class="divButtonForm">
+                    <button class="bForm" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
     </form>
 </body>
 <footer>
