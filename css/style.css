@@ -151,7 +151,8 @@ li a {
 
 footer {
     background-color: #003afa;
-    height: 20rem;
+    height: 12rem;
+    padding-top: 30px;
 }
 
 .list-icones {
