@@ -1,506 +1,557 @@
-/*Ajout police*/
-
-@font-face {
-    /*open_sansregular*/
-    font-family: 'open_sansregular';
-    src: url('../font/Open_Sans/opensans-regular-webfont.woff2') format('woff2'), url('../font/Open_Sans/opensans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    /*open_sanslight*/
-    font-family: 'open_sanslight';
-    src: url('../font/Open_Sans/opensans-light-webfont.woff2') format('woff2'), url('../font/Open_Sans/opensans-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    /*encode_sans_condensedlight*/
-    font-family: 'encode_sans_condensedlight';
-    src: url('../font/Encode_Sans/encodesanscondensed-light-webfont.woff2') format('woff2'), url('../font/Encode_Sans/encodesanscondensed-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    /*encode_sans_condensedmedium*/
-    font-family: 'encode_sans_condensedmedium';
-    src: url('../font/Encode_Sans/encodesanscondensed-medium-webfont.woff2') format('woff2'), url('../font/Encode_Sans/encodesanscondensed-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    /*encode_sans_condensedregular*/
-    font-family: 'encode_sans_condensedregular';
-    src: url('../font/Encode_Sans/encodesanscondensed-regular-webfont.woff2') format('woff2'), url('../font/Encode_Sans/encodesanscondensed-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    /*encode_sans_condensedsemibold*/
-    font-family: 'encode_sans_condensedsemibold';
-    src: url('../font/Encode_Sans/encodesanscondensed-semibold-webfont.woff2') format('woff2'), url('../font/Encode_Sans/encodesanscondensed-semibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-/*Reset CSS*/
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'open_sansregular';
-}
-
-.container {
-    margin: 0 10%;
-}
-
-h1 {
-    font-family: 'encode_sans_condensedmedium';
-}
-
-h2,
-h3,
-h4 {
-    font-family: 'open_sansregular';
-}
-
-
-/*Mise en forme du menu*/
-
-nav {
-    /*Ajout ombre en bas de la nav bar*/
-    background-color: #fff;
-    position: sticky;
-    top: 0px;
-    padding: 1.5rem 0;
-    box-shadow: 0 0 7px 2px rgba(46, 46, 46, 0.2);
-}
-
-ul {
-    /*Suppression puce*/
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li a {
-    /*Design bouton en-tête*/
-    display: inline-block;
-    color: #00faaa;
-    text-align: center;
-    padding: 0.875rem 2.5rem;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.box-logo {
-    display: inline-block;
-    margin-left: 38%;
-}
-
-.logo-nav-bar {
-    padding: 0;
-}
-
-.bContact,
-.bCV {
-    /*Design boutons en-tête*/
-    border-style: solid;
-    border-radius: 30px;
-    border-color: #00faaa;
-    transition-duration: 0.3s;
-}
-
-.bContact:hover,
-.bCV:hover {
-    /*Design boutons en-tête au survol*/
-    background-color: #00faaa;
-    color: #fff;
-    transition-duration: 0.3s;
-}
-
-.bContact:active {
-    /*Design boutons en-tête quand la page est active*/
-    color: #fff;
-    background-color: #00faaa;
-}
-
-.change-lang {
-    position: absolute;
-    top: 4px;
-    right: 8px;
-    font-size: 13px;
-    text-align: right;
-}
-
-.lien-lang {
-    text-decoration: none;
-    color: #003afa;
-}
-
-
-/*Mise en forme du footer*/
-
-footer {
-    background-color: #003afa;
-    height: 12rem;
-    padding-top: 30px;
-}
-
-.list-icones {
-    text-align: center;
-}
-
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3rem 0;
-}
-
-.icone {
-    font-size: 24px;
-    display: inline-block;
-    border: solid white;
-    margin: 0.5rem;
-    border-radius: 100px;
-    height: 50px;
-    width: 50px;
-    transition: .3s ease-in-out;
-    color: white;
-}
-
-.i-footer {
-    color: inherit;
-    vertical-align: -webkit-baseline-middle;
-}
-
-.icone:hover {
-    background-color: white;
-    color: #003afa;
-}
-
-.i-footer:hover {
-    color: inherit;
-    transition: .3s ease-in-out;
-}
-
-.lien-icone {
-    color: inherit;
-}
-
-.info {
-    margin-top: 2rem;
-    text-align: center;
-    color: white;
-    line-height: 2;
-}
-
-
-/*Mise en forme du hero*/
-
-.texte-hero {
-    /*Ajout padding top et bott au texte*/
-    padding: 3.5rem 0;
-}
-
-.hero-img {
-    /*Ajout padding /tous les côtés de l'image*/
-    padding-bottom: 4rem;
-}
-
-.titre-hero {
-    /*Mise en forme titre hero*/
-    text-align: center;
-    padding: 1.5rem 0;
-    font-size: 40px;
-}
-
-.sous-titre-hero {
-    /*Mise en forme sous-titre hero*/
-    text-align: center;
-    padding: 1.5rem 0;
-    font-weight: lighter;
-    font-size: 24px;
-}
-
-.img-emp {
-    /*Design image du hero*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 400px;
-    padding: 2rem 0;
-}
-
-
-/*Mise en forme du texte de présentation*/
-
-.bloc-presentation {
-    /*Design du bloc contenant le texte de présentation*/
-    padding-top: 4rem;
-    padding-bottom: 8rem;
-    background-color: #003afa;
-    color: white;
-}
-
-.texte {
-    /*Ajout padding /tous les côtés du bloc contenant le texte de présentation*/
-    padding: 3rem 0;
-}
-
-.titre-presentation {
-    /*Design titre présentation*/
-    text-align: center;
-    padding-bottom: 2.5rem;
-}
-
-.texte-presentation {
-    /*Design texte présentation*/
-    width: 50%;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: lighter;
-    line-height: 1.5;
-    font-size: 18px;
-    padding-bottom: 4rem;
-}
-
-
-/*Mise en forme du tableau des compétences*/
-
-table {
-    /*Design général du tableau*/
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    border-collapse: collapse;
-}
-
-td {
-    /*Design général des cellules*/
-    width: 50%;
-}
-
-.col-g {
-    /*Ajout marge /côté droite de la colonne de gauche pour faire la séparation*/
-    border-right: thin solid rgba(46, 46, 46, 0.2);
-}
-
-.box {
-    /*Recul du bloc contenant les compétences*/
-    margin-top: -9.5rem;
-    background-color: transparent;
-    width: 100%;
-    margin-bottom: 6rem;
-}
-
-.bloc-competences {
-    /*Design bloc contenant les compétences*/
-    background-color: white;
-    width: 65%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 30px;
-    margin-top: -100px;
-    box-shadow: 0 0 7px 2px rgba(46, 46, 46, 0.2);
-}
-
-.fig {
-    /*Design image illustrant une compétence*/
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 1.2rem;
-}
-
-figure {
-    /*Ajout marge bott au bloc contenant l'image illustrant une compétence*/
-    margin-bottom: 1rem;
-}
-
-.titre-competence {
-    /*Design titre des compétences*/
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.titre-cell,
-.titre-cell-2 {
-    /*Design des titres des différentes parties*/
-    margin-bottom: 1.5rem;
-    text-align: center;
-    color: #00bcf5;
-}
-
-.titre-cell-2 {
-    /*Design des titres de la 2e ligne*/
-    margin-top: 2rem;
-}
-
-.list,
-.list-last {
-    /*Design */
-    text-align: center;
-    line-height: 2rem;
-    font-weight: lighter;
-}
-
-.list-last {
-    /*Ajout marge pour la derière ligne du tableau*/
-    margin-bottom: 3rem;
-}
-
-
-/*Mise en forme des vignettes*/
-
-.titre-projet,
-.sous-titre-projet {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.grille {
-    /*Design général de la grille contenant les vignettes*/
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 4rem;
-}
-
-.vignette {
-    /*Design de la div contenant l'image et le bouton*/
-    flex: none;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.img-vignette {
-    /*Design de l'image*/
-    border-radius: 30px;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 0 7px 2px rgba(46, 46, 46, 0.2);
-}
-
-.bouton-site {
-    /*Design du bouton*/
-    border: solid #00bcf5;
-    width: fit-content;
-    border-radius: 30px;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 18px;
-    color: #00bcf5;
-    transition: .3s ease-in-out;
-}
-
-.bouton-site:hover {
-    /*Design du bouton au survol*/
-    background-color: #00bcf5;
-    color: #fff;
-}
-
-.lien-site {
-    /*Design du texte du bouton*/
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-}
-
-
-/*Mise en forme du formulaire*/
-
-form {
-    /*Design formulaire*/
-    text-align: center;
-}
-
-.bForm {
-    /*Design bouton envoyer formulaire contact*/
-    display: inline-block;
-    color: #00faaa;
-    background-color: #fff;
-    padding: 0.875rem 2.5rem;
-    text-decoration: none;
-    font-size: 18px;
-    border-style: solid;
-    border-radius: 30px;
-    border-color: #00faaa;
-    transition-duration: 0.3s;
-}
-
-.bForm:hover {
-    /*Design bouton envoyer formulaire contact au survol*/
-    background-color: #00faaa;
-    color: #fff;
-    transition-duration: 0.3s;
-}
-
-.champForm {
-    /*Design champ du formulaire*/
-    font-size: 20px;
-    text-align: inherit;
-    background-color: rgba(243, 236, 236, 0.541);
-    width: 60%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 30px;
-    box-shadow: 0 0 7px 2px rgba(46, 46, 46, 0.2);
-    padding: 1.5rem 0;
-}
-
-form {
-    padding-bottom: 6rem;
-}
-
-.divButtonForm {
-    /*Design bouton du formulaire*/
-    padding: 1.5rem 0;
-}
-
-.require {
-    /*Design div du formulaire*/
-    padding: 0 0 0.5rem 0.8rem;
-    font-size: 12px;
-    text-align: left;
-}
-
-.divChampNameL {
-    /*Design texte champ nom*/
-    width: 50%;
-    float: left;
-    margin: 1rem 0;
-}
-
-.divChampNameR {
-    /*Design texte champ prenom*/
-    width: 50%;
-    float: right;
-    margin: 1rem 0;
-}
-
-input,
-textarea {
-    /*Design input champ nom et prenom*/
-    width: 65%;
-    height: 100%;
-    border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
-    font-size: 16px;
-    margin-bottom: 1rem;
-}
+        /*Ajout police*/
+        
+        @font-face {
+            /*open_sansregular*/
+            font-family: 'open_sansregular';
+            src: url('../font/Open_Sans/opensans-regular-webfont.woff2') format('woff2'), url('../font/Open_Sans/opensans-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            /*open_sanslight*/
+            font-family: 'open_sanslight';
+            src: url('../font/Open_Sans/opensans-light-webfont.woff2') format('woff2'), url('../font/Open_Sans/opensans-light-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            /*encode_sans_condensedlight*/
+            font-family: 'encode_sans_condensedlight';
+            src: url('../font/Encode_Sans/encodesanscondensed-light-webfont.woff2') format('woff2'), url('../font/Encode_Sans/encodesanscondensed-light-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            /*encode_sans_condensedmedium*/
+            font-family: 'encode_sans_condensedmedium';
+            src: url('../font/Encode_Sans/encodesanscondensed-medium-webfont.woff2') format('woff2'), url('../font/Encode_Sans/encodesanscondensed-medium-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            /*encode_sans_condensedregular*/
+            font-family: 'encode_sans_condensedregular';
+            src: url('../font/Encode_Sans/encodesanscondensed-regular-webfont.woff2') format('woff2'), url('../font/Encode_Sans/encodesanscondensed-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            /*encode_sans_condensedsemibold*/
+            font-family: 'encode_sans_condensedsemibold';
+            src: url('../font/Encode_Sans/encodesanscondensed-semibold-webfont.woff2') format('woff2'), url('../font/Encode_Sans/encodesanscondensed-semibold-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*Reset CSS*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'open_sansregular';
+        }
+        
+        .container {
+            margin: 0 5%;
+        }
+        
+        h1 {
+            font-family: 'encode_sans_condensedmedium';
+        }
+        
+        h2,
+        h3,
+        h4 {
+            font-family: 'open_sansregular';
+        }
+        /*Media Queries*/
+        
+        @media all and (max-width: 479px) {
+            .grille {
+                display: block !important;
+                text-align: center !important;
+                padding: 0rem !important;
+            }
+            .img-vignette {
+                width: 300px !important;
+                height: auto !important;
+            }
+            .bouton-site {
+                margin-bottom: 5% !important;
+            }
+            .logo-nav-bar {
+                display: none!important;
+            }
+            .bCV,
+            .bContact {
+                width: auto !important;
+                padding: 0.3rem 1rem!important;
+                border-radius: 20px !important;
+            }
+            .img-emp {
+                display: none !important;
+            }
+            .texte-presentation,
+            .bloc-competences {
+                width: auto !important;
+            }
+            .champForm {
+                width: auto !important;
+            }
+        }
+        
+        @media (min-width: 480px) and (max-width: 780px) {
+            .grille {
+                display: block !important;
+                text-align: center !important;
+                padding: 0rem !important;
+            }
+            .bouton-site {
+                margin-bottom: 5% !important;
+            }
+            .bCV,
+            .bContact {
+                width: auto !important;
+                padding: 0.3rem 1rem!important;
+                border-radius: 20px !important;
+            }
+            .logo-nav-bar {
+                display: none !important;
+            }
+            .img-emp {
+                display: none !important;
+            }
+            .texte-presentation,
+            .bloc-competences {
+                width: auto !important;
+            }
+        }
+        /*Mise en forme du menu*/
+        
+        nav {
+            /*Ajout ombre en bas de la nav bar*/
+            background-color: #fff;
+            position: sticky;
+            top: 0px;
+            padding: 1.5rem 0;
+            box-shadow: 0 0 7px 2px rgba(46, 46, 46, 0.2);
+            height: auto;
+            width: auto;
+        }
+        
+        .menu {
+            width: 33%;
+            display: inline-block;
+        }
+        
+        .bCV {
+            display: inline-block;
+            color: #00faaa;
+            text-align: center;
+            padding: 0.875rem 2.5rem;
+            text-decoration: none;
+            font-size: 18px;
+            border-style: solid;
+            border-radius: 30px;
+            border-color: #00faaa;
+            transition-duration: 0.3s;
+            width: max-content;
+        }
+        
+        .bContact {
+            display: inline-block;
+            color: #00faaa;
+            text-align: center;
+            padding: 0.875rem 2.5rem;
+            text-decoration: none;
+            font-size: 18px;
+            border-style: solid;
+            border-radius: 30px;
+            border-color: #00faaa;
+            transition-duration: 0.3s;
+            width: max-content;
+        }
+        
+        .bContact:hover,
+        .bCV:hover {
+            /*Design boutons en-tête au survol*/
+            background-color: #00faaa;
+            color: #fff;
+            transition-duration: 0.3s;
+        }
+        
+        .bContact:active {
+            /*Design boutons en-tête quand la page est active*/
+            color: #fff;
+            background-color: #00faaa;
+        }
+        
+        .logo-nav-bar {
+            display: block;
+            margin: auto;
+        }
+        
+        .lien-lang {
+            text-decoration: underline;
+            color: #fff;
+        }
+        /*Mise en forme du footer*/
+        
+        footer {
+            background-color: #003afa;
+            height: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: auto;
+        }
+        
+        .list-icones {
+            text-align: center;
+        }
+        
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3rem 0;
+        }
+        
+        .icone {
+            font-size: 24px;
+            display: inline-block;
+            border: solid white;
+            margin: 0.5rem;
+            border-radius: 100px;
+            height: 50px;
+            width: 50px;
+            transition: .3s ease-in-out;
+            color: white;
+        }
+        
+        .i-footer {
+            color: inherit;
+            vertical-align: -webkit-baseline-middle;
+        }
+        
+        .icone:hover {
+            background-color: white;
+            color: #003afa;
+        }
+        
+        .i-footer:hover {
+            color: inherit;
+            transition: .3s ease-in-out;
+        }
+        
+        .lien-icone {
+            color: inherit;
+        }
+        
+        .info {
+            margin-top: 2rem;
+            text-align: center;
+            color: white;
+            line-height: 2;
+        }
+        /*Mise en forme du hero*/
+        
+        .texte-hero {
+            /*Ajout padding top et bott au texte*/
+            padding: 3.5rem 0;
+        }
+        
+        .hero-img {
+            /*Ajout padding /tous les côtés de l'image*/
+            padding-bottom: 4rem;
+        }
+        
+        .titre-hero {
+            /*Mise en forme titre hero*/
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 40px;
+        }
+        
+        .sous-titre-hero {
+            /*Mise en forme sous-titre hero*/
+            text-align: center;
+            padding: 1.5rem 0;
+            font-weight: lighter;
+            font-size: 24px;
+        }
+        
+        .img-emp {
+            /*Design image du hero*/
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 400px;
+            padding: 2rem 0;
+        }
+        /*Mise en forme du texte de présentation*/
+        
+        .bloc-presentation {
+            /*Design du bloc contenant le texte de présentation*/
+            padding-top: 4rem;
+            padding-bottom: 8rem;
+            background-color: #003afa;
+            color: white;
+        }
+        
+        .texte {
+            /*Ajout padding /tous les côtés du bloc contenant le texte de présentation*/
+            padding: 3rem 0;
+        }
+        
+        .titre-presentation {
+            /*Design titre présentation*/
+            text-align: center;
+            padding-bottom: 2.5rem;
+        }
+        
+        .texte-presentation {
+            /*Design texte présentation*/
+            width: 50%;
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: lighter;
+            line-height: 1.5;
+            font-size: 18px;
+            padding-bottom: 4rem;
+        }
+        /*Mise en forme du tableau des compétences*/
+        
+        ul {
+            /*Suppression puce*/
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        table {
+            /*Design général du tableau*/
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        td {
+            /*Design général des cellules*/
+            width: 50%;
+        }
+        
+        .col-g {
+            /*Ajout marge /côté droite de la colonne de gauche pour faire la séparation*/
+            border-right: thin solid rgba(46, 46, 46, 0.2);
+        }
+        
+        .box {
+            /*Recul du bloc contenant les compétences*/
+            margin-top: -9.5rem;
+            background-color: transparent;
+            width: 100%;
+            margin-bottom: 6rem;
+        }
+        
+        .bloc-competences {
+            /*Design bloc contenant les compétences*/
+            background-color: white;
+            width: 65%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 30px;
+            box-shadow: 0 0 7px 2px rgba(46, 46, 46, 0.2);
+        }
+        
+        .fig {
+            /*Design image illustrant une compétence*/
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 1.2rem;
+        }
+        
+        figure {
+            /*Ajout marge bott au bloc contenant l'image illustrant une compétence*/
+            margin-bottom: 1rem;
+        }
+        
+        .titre-competence {
+            /*Design titre des compétences*/
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .titre-cell,
+        .titre-cell-2 {
+            /*Design des titres des différentes parties*/
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #00bcf5;
+        }
+        
+        .titre-cell-2 {
+            /*Design des titres de la 2e ligne*/
+            margin-top: 2rem;
+        }
+        
+        .list,
+        .list-last {
+            /*Design */
+            text-align: center;
+            line-height: 2rem;
+            font-weight: lighter;
+        }
+        
+        .list-last {
+            /*Ajout marge pour la derière ligne du tableau*/
+            margin-bottom: 3rem;
+        }
+        /*Mise en forme des vignettes*/
+        
+        .titre-projet,
+        .sous-titre-projet {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .grille {
+            /*Design général de la grille contenant les vignettes*/
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem;
+        }
+        
+        .vignette {
+            /*Design de la div contenant l'image et le bouton*/
+            flex: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .img-vignette {
+            /*Design de l'image*/
+            border-radius: 30px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 7px 2px rgba(46, 46, 46, 0.2);
+        }
+        
+        .bouton-site {
+            /*Design du bouton*/
+            border: solid #00bcf5;
+            width: fit-content;
+            border-radius: 30px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+            color: #00bcf5;
+            transition: .3s ease-in-out;
+        }
+        
+        .bouton-site:hover {
+            /*Design du bouton au survol*/
+            background-color: #00bcf5;
+            color: #fff;
+        }
+        
+        .lien-site {
+            /*Design du texte du bouton*/
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+        }
+        /*Mise en forme du formulaire*/
+        
+        form {
+            /*Design formulaire*/
+            text-align: center;
+        }
+        
+        .bForm {
+            /*Design bouton envoyer formulaire contact*/
+            display: inline-block;
+            color: #00faaa;
+            background-color: #fff;
+            padding: 0.875rem 2.5rem;
+            text-decoration: none;
+            font-size: 18px;
+            border-style: solid;
+            border-radius: 30px;
+            border-color: #00faaa;
+            transition-duration: 0.3s;
+        }
+        
+        .bForm:hover {
+            /*Design bouton envoyer formulaire contact au survol*/
+            background-color: #00faaa;
+            color: #fff;
+            transition-duration: 0.3s;
+        }
+        
+        .champForm {
+            /*Design champ du formulaire*/
+            font-size: 20px;
+            text-align: inherit;
+            background-color: rgba(243, 236, 236, 0.541);
+            width: 60%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 30px;
+            box-shadow: 0 0 7px 2px rgba(46, 46, 46, 0.2);
+            padding: 1.5rem 0;
+        }
+        
+        form {
+            padding-bottom: 6rem;
+        }
+        
+        .divButtonForm {
+            /*Design bouton du formulaire*/
+            padding: 1.5rem 0;
+        }
+        
+        .require {
+            /*Design div du formulaire*/
+            padding: 0 0 0.5rem 0.8rem;
+            font-size: 12px;
+            text-align: left;
+        }
+        
+        .divChampNameL {
+            /*Design texte champ nom*/
+            width: 50%;
+            float: left;
+            margin: 1rem 0;
+        }
+        
+        .divChampNameR {
+            /*Design texte champ prenom*/
+            width: 50%;
+            float: right;
+            margin: 1rem 0;
+        }
+        
+        input,
+        textarea {
+            /*Design input champ nom et prenom*/
+            width: 65%;
+            height: 100%;
+            border-radius: 10px;
+            border-width: 2px;
+            border-style: solid;
+            font-size: 16px;
+            margin-bottom: 1rem;
+        }
