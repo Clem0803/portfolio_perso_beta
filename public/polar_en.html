@@ -1,54 +1,106 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="icon" href="../img/code-solid.png" />
-    <title>Polar association</title>
-    <script src="https://kit.fontawesome.com/8632e6c968.js" crossorigin="anonymous"></script>
-  </head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="icon" href="../img/code-solid.png" />
+        <title>Polar association</title>
+        <script src="https://kit.fontawesome.com/8632e6c968.js" crossorigin="anonymous"></script>
+    </head>
 
-  <body>
-    <nav>
-      <div>
-        <table style="text-align: center">
-          <tr>
-            <td class="menu"><a class="bCV" href="../doc/CV_en.pdf" target="_blank">My resume</a></td>
-            <td class="menu">
-              <a class="logo-nav-bar" href="../english.html"><img src="../img/code-solid.png" /></a>
-            </td>
-            <td class="menu"><a class="bContact" href="form_en.html">Want to talk ?</a></td>
-          </tr>
-        </table>
-      </div>
-    </nav>
-  </body>
-  <footer>
-    <div class="container">
-      <div>
-        <div class="list-icones">
-          <div class="icone">
-            <a class="lien-icone" href="mailto:clement.pujol08@gmail.com">
-              <span class="i-footer"><i class="fas fa-paper-plane"></i></span>
-            </a>
-          </div>
-          <div class="icone">
-            <a class="lien-icone" href="https://www.linkedin.com/in/clement-pujol/" target="_blank">
-              <span class="i-footer"><i class="fab fa-linkedin-in"></i></span>
-            </a>
-          </div>
+    <body>
+        <nav>
+            <div>
+                <table style="text-align: center">
+                    <tr>
+                        <td class="menu"><a class="bCV" href="../doc/CV_en.pdf" target="_blank">My resume</a></td>
+                        <td class="menu">
+                            <a class="logo-nav-bar" href="../english.html"><img src="../img/code-solid.png" /></a>
+                        </td>
+                        <td class="menu"><a class="bContact" href="form_en.html">Want to talk ?</a></td>
+                    </tr>
+                </table>
+            </div>
+        </nav>
+        <div class="bloc-titre-article">
+            <div class="container">
+                <div>
+                    <h1 class="titre-article">"LED Bar" project</h1>
+                    <h2 class="sous-titre-article">Some information about this project</h2>
+                </div>
+            </div>
         </div>
-        <div class="info">
-          <span>My e-mail : clement.pujol08@gmail.com</span>
-          <br />
-          <span>Return to <a class="lien-lang" href="../index.html">home</a></span>
-          <br />
-          <span>© 2020 PUJOL Clément</span>
-          <br />
-          <span>Voir la page en <a class="lien-lang" href="form_fr.html">Français (fr)</a></span>
+        <div class="bloc-description">
+            <div class="container">
+                <div class="description">
+                    <h1 class="titre-partie-article">Project presentation</h1>
+                    <p class="texte-article">
+                        In order to validate my 2nd year of BTS, I had to choose and carry out with my team a project for the POLAR association. This
+                        association is specialized in the realization of plays of light for different types of scenes. The project we have chosen,
+                        entitled "LED Bar", consists in realizing a device allowing to control the lighting of a scenography more easily than what the
+                        association already has.
+                    </p>
+                </div>
+                <div class="description">
+                    <h1 class="titre-partie-article">What already exists</h1>
+                    <p class="texte-article">
+                        In order to realize the different scenographies, the association uses a grandMa. This console allows you to create and
+                        configure LED bars placed at different places on the stage. Since the association rents its equipment, it has chosen to create
+                        their own LED bar using LED strip light which will then be put into transparent tubes so that the light can be seen. This
+                        greatly lowers the cost of LED light bars, but the control of the bars is more difficult as the LED strips lights don't
+                        commute with the grandMa.
+                    </p>
+                </div>
+                <div class="description-mission">
+                    <h1 class="titre-partie-article">Our mission</h1>
+                    <p class="texte-article">
+                        The purpose of this project is to create a device for grandMa and LED strip lights to communicate with each other in order to
+                        achieve any desired configuration.
+                    </p>
+                </div>
+                <div class="description">
+                    <h1 class="titre-partie-article">A potential solution</h1>
+                    <img class="image-article" src="../img/schéma-conceptuelle-projet-led-en.png" />
+                    <p class="image-article-legende">Conceptual scheme of the project</p>
+                    <br />
+                    <p class="texte-article">
+                        One solution that our referent professor provided us is to configure a Raspberry to act as an interpreter so that the grandMa
+                        and the LED strips can understand each other. To do this, we will configure the Raspberry so that it can interpret DMX frames
+                        (frame format used to create lighting effects) that are sent by the grandMa over the network using the Art-Net protocol, which
+                        makes it easy to send a DMX frame over the network. Once the Raspberry has received the DMX frame, it will be able to convert
+                        it to the format that the LED strip lights uses.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </body>
+    
+    <footer>
+        <div class="container">
+            <div>
+                <div class="list-icones">
+                    <div class="icone">
+                        <a class="lien-icone" href="mailto:clement.pujol08@gmail.com">
+                            <span class="i-footer"><i class="fas fa-paper-plane"></i></span>
+                        </a>
+                    </div>
+                    <div class="icone">
+                        <a class="lien-icone" href="https://www.linkedin.com/in/clement-pujol/" target="_blank">
+                            <span class="i-footer"><i class="fab fa-linkedin-in"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="info">
+                    <span>My e-mail : clement.pujol08@gmail.com</span>
+                    <br />
+                    <span>Return to <a class="lien-lang" href="../index.html">home</a></span>
+                    <br />
+                    <span>© 2020 PUJOL Clément</span>
+                    <br />
+                    <span>Voir la page en <a class="lien-lang" href="polar_fr.html">Français (fr)</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </html>

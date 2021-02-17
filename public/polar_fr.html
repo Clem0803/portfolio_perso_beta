@@ -41,9 +41,9 @@
                     <h1 class="titre-partie-article">Présentation du projet</h1>
                     <p class="texte-article">
                         Afin de valider ma 2e année de BTS, j'ai dû choisir et réaliser avec mon équipe un projet pour l'association POLAR. Cette
-                        dernière est spécialisée dans la réalisation de différent jeu de lumière pour différent type de scène. Le projet que nous
-                        avons choisi, intitulé "Barre LED", consiste à réaliser un dispositif permettant de contrôler l'éclairage d'une scènographie
-                        de manière plus simple que ce que notre commanditaire possède déjà.
+                        dernière est spécialisée dans la réalisation de jeu de lumière pour différent type de scène. Le projet que nous avons choisi,
+                        intitulé "Barre LED", consiste à réaliser un dispositif permettant de contrôler l'éclairage d'une scénographie de manière plus
+                        simple que ce que notre commanditaire possède déjà.
                     </p>
                 </div>
                 <div class="description">
@@ -51,8 +51,8 @@
                     <p class="texte-article">
                         Afin de réaliser les différentes scénographies, l'association utilise une grandMa. Cette console permet de créer et configurer
                         des barres LED placées à différent endroits de la scène. Etant donné que l'association loue son matériel, elle a choisi de
-                        créer leur propre barre LED à l'aide de ruban LED qui seront ensuite mis dans des tubes transparent afin que la lumière puisse
-                        se faire voir. Cette démarche permet de faire grandement baisser le coût des barres LED mais le contrôle des barres se fait de
+                        créer leur propre barres LED à l'aide de ruban LED qui sera ensuite mis dans un tube transparent afin que la lumière puisse se
+                        faire voir. Cette démarche permet de faire grandement baisser le coût des barres LED mais le contrôle des barres se fait de
                         manière plus difficiles car les rubans LED ne comminuquent pas avec la grandMa.
                     </p>
                 </div>
@@ -69,16 +69,17 @@
                     <p class="image-article-legende">Schéma conceptuel du projet</p>
                     <br />
                     <p class="texte-article">
-                        Une des solutions que notre professeur référent nous a fournie consiste à configurer un Raspberry de manière à ce qu'il serve
-                        d'interprète afin que la grandMa et les rubans LED puissent se comprendre.
+                        Une solution que notre professeur référent nous a fournie consiste à configurer une Raspberry de manière à ce qu'elle serve
+                        d'interprète afin que la grandMa et les rubans LED puissent se comprendre. Pour cela, nous allons configurer la Raspberry afin
+                        qu'elle puisse interpréter des trames DMX (format de trame utilisé pour créer des jeux de lumière) qui sont envoyées par la
+                        grandMa via le réseau grâce au protocole Art-Net qui permet de faciliter l'envoi d'une trame DMX dans le réseau. Lorsque la
+                        Raspberry aura reçu la trame DMX, elle pourra ainsi la convertir au format que le ruban LED utilise.
                     </p>
-                </div>
-                <div class="description">
-                    <h1 class="titre-partie-article">La solution logiciel</h1>
                 </div>
             </div>
         </div>
     </body>
+    
     <footer>
         <div class="container">
             <div>
