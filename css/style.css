@@ -76,75 +76,92 @@ h4 {
 /*----------------------------------------------Media Queries----------------------------------------------*/
 
 @media all and (max-width: 479px) {
+    /* Vignette */
     .grille {
         display: block !important;
         text-align: center !important;
         padding: 0rem !important;
     }
+    /* Image des vignettes */
     .img-vignette {
         width: 300px !important;
         height: auto !important;
     }
+    /* Bouton des vignettes */
     .bouton-site {
         margin-bottom: 5% !important;
     }
-    .logo-nav-bar {
-        display: none !important;
-    }
+    /* Bouton présent sur le menu */
     .bCV,
     .bContact {
         width: auto !important;
         padding: 0.3rem 1rem !important;
         border-radius: 20px !important;
     }
-    .img-emp {
+    /* Logo présent dans le menu +
+        image sur la page d'accueil (hero) +
+        image et légende dans l'article polar +
+        titre de compétence du tableau */
+    .image-article,
+    .image-article-legende,
+    .img-emp,
+    .logo-nav-bar,
+    .titre-competence {
         display: none !important;
     }
+    /* Texte de présentation sur la page d'accueil +
+        texte de description dans l'article +
+        tableau de compétences sur la page d'accueil +
+        champ du formulaire */
     .texte-presentation,
-    .bloc-competences {
-        width: auto !important;
-    }
+    .texte-article,
+    .bloc-competences,
     .champForm {
         width: auto !important;
     }
+    /* Titre caché dans le tableau de compétence */
     .titre-competence-responsive {
         display: block !important;
-    }
-    .titre-competence {
-        display: none !important;
     }
 }
 
 @media (min-width: 480px) and (max-width: 780px) {
+    /* Vignette */
     .grille {
         display: block !important;
         text-align: center !important;
         padding: 0rem !important;
     }
+    /* Bouton des vignettes */
     .bouton-site {
         margin-bottom: 5% !important;
     }
+    /* Bouton du menu */
     .bCV,
     .bContact {
         width: auto !important;
         padding: 0.3rem 1rem !important;
         border-radius: 20px !important;
     }
-    .logo-nav-bar {
-        display: none !important;
-    }
+    /* Logo du menu +
+        image sur la page d'accueil (hero) */
+    .logo-nav-bar,
     .img-emp {
         display: none !important;
     }
+    /* Texte de présentation sur la page d'accueil +
+        texte de description dans l'article +
+        tableau de compétences sur la page d'accueil */
     .texte-presentation,
+    .texte-article,
     .bloc-competences {
         width: auto !important;
     }
 }
 /*----------------------------------------------Mise en forme du menu----------------------------------------------*/
 
+/*Ajout d'une ombre en bas du menu*/
 nav {
-    /*Ajout ombre en bas de la nav bar*/
     background-color: #fff;
     position: sticky;
     top: 0px;
@@ -154,11 +171,13 @@ nav {
     width: auto;
 }
 
+/* Réglage de la taille des cases de chaque éléments du menu */
 .menu {
     width: 33%;
     display: inline-block;
 }
 
+/* Design du bouton menant au CV */
 .bCV {
     display: inline-block;
     color: #00faaa;
@@ -173,6 +192,7 @@ nav {
     width: max-content;
 }
 
+/* Design du bouton menant à la page contact */
 .bContact {
     display: inline-block;
     color: #00faaa;
@@ -187,32 +207,23 @@ nav {
     width: max-content;
 }
 
+/* Design des boutons du menu au survol */
 .bContact:hover,
 .bCV:hover {
-    /*Design boutons en-tête au survol*/
     background-color: #00faaa;
     color: #fff;
     transition-duration: 0.3s;
 }
 
-.bContact:active {
-    /*Design boutons en-tête quand la page est active*/
-    color: #fff;
-    background-color: #00faaa;
-}
-
+/* Design du logo présent dans le menu */
 .logo-nav-bar {
     display: block;
     margin: auto;
 }
 
-.lien-lang {
-    text-decoration: underline;
-    color: #fff;
-}
-
 /*----------------------------------------------Mise en forme du footer----------------------------------------------*/
 
+/* Design général du footer */
 footer {
     background-color: #003afa;
     height: auto;
@@ -221,17 +232,12 @@ footer {
     width: auto;
 }
 
+/* Centrage des deux boutons du footer */
 .list-icones {
     text-align: center;
 }
 
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3rem 0;
-}
-
+/* Design des icones pour les deux boutons du footer */
 .icone {
     font-size: 24px;
     display: inline-block;
@@ -244,25 +250,30 @@ footer {
     color: white;
 }
 
+/* Centrage vertical du contenu des deux boutons du footer */
 .i-footer {
     color: inherit;
     vertical-align: -webkit-baseline-middle;
 }
 
+/* Design des deux boutons du footer au survol */
 .icone:hover {
     background-color: white;
     color: #003afa;
 }
 
+/* Design du contenu des deux boutons du footer au survol */
 .i-footer:hover {
     color: inherit;
     transition: 0.3s ease-in-out;
 }
 
+/* Couleur du contenu des deux boutons du footer */
 .lien-icone {
     color: inherit;
 }
 
+/* Design des infos présentes dans le footer sous les deux boutons */
 .info {
     margin-top: 2rem;
     text-align: center;
@@ -270,64 +281,71 @@ footer {
     line-height: 2;
 }
 
+/* Couleur du lien pour changer de langue */
+.lien-lang {
+    text-decoration: underline;
+    color: #fff;
+}
+
 /*----------------------------------------------Mise en forme du hero----------------------------------------------*/
 
+/* Ajout d'un padding en haut et en bas du texte présent au dessus du hero de la page d'accueil */
 .texte-hero {
-    /*Ajout padding top et bott au texte*/
     padding: 3.5rem 0;
 }
 
+/* Ajout d'un padding pour tous les côtés du hero de la page d'accueil */
 .hero-img {
-    /*Ajout padding /tous les côtés de l'image*/
     padding-bottom: 4rem;
 }
 
+/* Mise en forme du titre du hero sur la page d'accueil */
 .titre-hero {
-    /*Mise en forme titre hero*/
     text-align: center;
     padding: 1.5rem 0;
     font-size: 40px;
 }
 
+/* Mise en forme du sous-titre du hero sur la page d'accueil */
 .sous-titre-hero {
-    /*Mise en forme sous-titre hero*/
     text-align: center;
     padding: 1.5rem 0;
     font-weight: lighter;
     font-size: 24px;
 }
 
+/*Design du hero*/
 .img-emp {
-    /*Design image du hero*/
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-height: 400px;
     padding: 2rem 0;
 }
-/*Mise en forme du texte de présentation*/
 
+/*----------Mise en forme du texte de présentation----------*/
+
+/*Design du bloc contenant le texte de présentation*/
 .bloc-presentation {
-    /*Design du bloc contenant le texte de présentation*/
     padding-top: 4rem;
     padding-bottom: 8rem;
     background-color: #003afa;
     color: white;
 }
 
+/*Ajout padding pour tous les côtés du bloc contenant le texte de présentation*/
 .texte {
-    /*Ajout padding pour tous les côtés du bloc contenant le texte de présentation*/
     padding: 3rem 0;
 }
 
+/*Design titre présentation*/
 .titre-presentation {
-    /*Design titre présentation*/
     text-align: center;
     padding-bottom: 2.5rem;
 }
 
+/*Design texte présentation*/
 .texte-presentation {
-    /*Design texte présentation*/
     width: 65%;
     text-align: center;
     display: block;
@@ -341,42 +359,42 @@ footer {
 
 /*----------------------------------------------Mise en forme du tableau des compétences----------------------------------------------*/
 
+/*Suppression puce*/
 ul {
-    /*Suppression puce*/
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
+/*Design général du tableau*/
 table {
-    /*Design général du tableau*/
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     border-collapse: collapse;
 }
 
+/*Design général des cellules*/
 td {
-    /*Design général des cellules*/
     width: 50%;
 }
 
+/*Ajout d'une marge pour le côté droit de la colonne de gauche pour faire la séparation*/
 .col-g {
-    /*Ajout marge /côté droite de la colonne de gauche pour faire la séparation*/
     border-right: thin solid rgba(46, 46, 46, 0.2);
 }
 
+/*Recul du bloc contenant les compétences*/
 .box {
-    /*Recul du bloc contenant les compétences*/
     margin-top: -9.5rem;
     background-color: transparent;
     width: 100%;
     margin-bottom: 6rem;
 }
 
+/*Design du bloc contenant les compétences*/
 .bloc-competences {
-    /*Design bloc contenant les compétences*/
     background-color: white;
     width: 65%;
     display: block;
@@ -386,88 +404,91 @@ td {
     box-shadow: 0 0 7px 2px rgba(46, 46, 46, 0.2);
 }
 
+/*Design des images illustrant une compétence*/
 .fig {
-    /*Design image illustrant une compétence*/
     display: block;
     margin-right: auto;
     margin-left: auto;
     padding: 1.2rem;
 }
 
+/*Ajout d'une marge en bas pour le bloc contenant l'image illustrant une compétence*/
 figure {
-    /*Ajout marge bott au bloc contenant l'image illustrant une compétence*/
     margin-bottom: 1rem;
 }
 
+/*Design du titre des compétences*/
 .titre-competence {
-    /*Design titre des compétences*/
     text-align: center;
     margin-bottom: 3rem;
 }
+
+/*Design du titre des compétences pour le responsive*/
 .titre-competence-responsive {
     display: none;
     text-align: center;
     margin-bottom: 3rem;
 }
 
+/*Design des titres des différentes parties*/
 .titre-cell,
 .titre-cell-2 {
-    /*Design des titres des différentes parties*/
     margin-bottom: 1.5rem;
     text-align: center;
     color: #00bcf5;
 }
 
+/*Design des titres de la 2e ligne*/
 .titre-cell-2 {
-    /*Design des titres de la 2e ligne*/
     margin-top: 2rem;
 }
 
+/*Design des éléments de la liste du tableau de compétences*/
 .list,
 .list-last {
-    /*Design */
     text-align: center;
     line-height: 2rem;
     font-weight: lighter;
 }
 
+/*Ajout d'une marge pour la dernière ligne du tableau*/
 .list-last {
-    /*Ajout marge pour la derière ligne du tableau*/
     margin-bottom: 3rem;
 }
 
 /*----------------------------------------------Mise en forme des vignettes----------------------------------------------*/
 
+/* Design du titre et sous-titre des vignettes */
 .titre-projet,
 .sous-titre-projet {
     text-align: center;
     margin-bottom: 2rem;
 }
 
+/*Design général de la grille contenant les vignettes*/
 .grille {
-    /*Design général de la grille contenant les vignettes*/
     display: flex;
     margin-left: auto;
     margin-right: auto;
     padding: 2rem;
 }
 
+/*Design de la div contenant l'image et le bouton d'une vignette*/
 .vignette {
-    /*Design de la div contenant l'image et le bouton*/
     flex: none;
     margin-left: auto;
     margin-right: auto;
 }
 
+/*Design de l'image*/
 .img-vignette {
-    /*Design de l'image*/
     border-radius: 30px;
     margin-bottom: 1.5rem;
     box-shadow: 0 0 7px 2px rgba(46, 46, 46, 0.2);
 }
 
+/*Design des boutons des vignettes*/
 .bouton-site {
-    /*Design du bouton*/
     border: solid #00bcf5;
     width: fit-content;
     border-radius: 30px;
@@ -479,14 +500,14 @@ figure {
     transition: 0.3s ease-in-out;
 }
 
+/*Design des boutons des vignettes au survol*/
 .bouton-site:hover {
-    /*Design du bouton au survol*/
     background-color: #00bcf5;
     color: #fff;
 }
 
+/*Design du texte des boutons des vignettes pour ceux contenant un lien vers un site*/
 .lien-site {
-    /*Design du texte du bouton*/
     text-decoration: none;
     color: inherit;
     display: inline-block;
@@ -494,13 +515,14 @@ figure {
 
 /*----------------------------------------------Mise en forme du formulaire----------------------------------------------*/
 
+/*Design du formulaire*/
 form {
-    /*Design formulaire*/
     text-align: center;
+    padding-bottom: 6rem;
 }
 
+/*Design du bouton envoyer pour le formulaire de contact*/
 .bForm {
-    /*Design bouton envoyer formulaire contact*/
     display: inline-block;
     color: #00faaa;
     background-color: #fff;
@@ -513,15 +535,15 @@ form {
     transition-duration: 0.3s;
 }
 
+/*Design du bouton envoyer pour le formulaire de contact au survol*/
 .bForm:hover {
-    /*Design bouton envoyer formulaire contact au survol*/
     background-color: #00faaa;
     color: #fff;
     transition-duration: 0.3s;
 }
 
+/*Design des champs du formulaire*/
 .champForm {
-    /*Design champ du formulaire*/
     font-size: 20px;
     text-align: inherit;
     background-color: rgba(243, 236, 236, 0.541);
@@ -535,39 +557,35 @@ form {
     padding: 1.5rem 0;
 }
 
-form {
-    padding-bottom: 6rem;
-}
-
+/*Design du bouton du formulaire*/
 .divButtonForm {
-    /*Design bouton du formulaire*/
     padding: 1.5rem 0;
 }
 
+/*Design du texte require du formulaire*/
 .require {
-    /*Design div du formulaire*/
     padding: 0 0 0.5rem 0.8rem;
     font-size: 12px;
     text-align: left;
 }
 
+/*Design du label champ nom*/
 .divChampNameL {
-    /*Design texte champ nom*/
     width: 50%;
     float: left;
     margin: 1rem 0;
 }
 
+/*Design du label champ prenom*/
 .divChampNameR {
-    /*Design texte champ prenom*/
     width: 50%;
     float: right;
     margin: 1rem 0;
 }
 
+/*Design des inputs pour le nom et le prenom*/
 input,
 textarea {
-    /*Design input champ nom et prenom*/
     width: 65%;
     height: 100%;
     border-radius: 10px;
@@ -578,37 +596,43 @@ textarea {
 }
 
 /*----------------------------------------------Mise en forme de l'article----------------------------------------------*/
+
+/*Design du bloc pour le titre de l'article*/
 .bloc-titre-article {
-    /*Design du bloc pour le titre de l'article*/
     padding: 3.5rem 0;
     background-color: #006fde;
     color: #fff;
 }
+
+/* Design du titre de l'article */
 .titre-article {
-    /* Design du titre de l'article */
     text-align: center;
     padding: 1.5rem 0;
     font-size: 40px;
 }
+
+/* Design du sous titre de l'article */
 .sous-titre-article {
-    /* Design du sous titre de l'article */
     text-align: center;
     padding: 1.5rem 0;
     font-weight: lighter;
     font-size: 24px;
 }
+
+/* Design du titre de chaque partie de l'article */
 .titre-partie-article {
-    /* Design du titre de chaque partie de l'article */
     text-align: center;
     padding-bottom: 2.5rem;
 }
+
+/* Design des parties de l'article */
 .description {
-    /* Design des parties de l'article */
     text-align: center;
     padding: 3rem 0;
 }
+
+/* Design spécial pour la partie mission */
 .description-mission {
-    /* Design spécial pour la partie mission */
     background-color: #006fde;
     color: #fff;
     padding: 3rem 0;
@@ -616,12 +640,15 @@ textarea {
     box-shadow: 0 5px 7px 2px rgb(46 46 46 / 20%);
     text-align: center;
 }
+
+/* Design texte partie article */
 .texte-article {
-    /* Design texte partie article */
     width: 65%;
     margin-left: auto;
     margin-right: auto;
 }
-.image-article-legende{
+
+/* Design du texte pour la légende de l'image de l'article */
+.image-article-legende {
     font-size: 12px;
 }
