@@ -45,11 +45,11 @@
                 <div class="description">
                     <h1 class="titre-partie-article">What already exists</h1>
                     <p class="texte-article">
-                        In order to realize the different scenographies, the association uses a grandMa. This console allows you to create and
-                        configure LED bars placed at different places on the stage. Since the association rents its equipment, it has chosen to create
-                        their own LED bar using LED strip light which will then be put into transparent tubes so that the light can be seen. This
-                        greatly lowers the cost of LED light bars, but the control of the bars is more difficult as the LED strips lights don't
-                        commute with the grandMa.
+                        In order to realize the different scenographies, the association uses a grandMa. This console allows you to configure LED bars 
+                        placed at different places on the stage. Since the association rents its equipment, it has chosen to create their own LED bar 
+                        using LED strip light which will then be put into transparent tubes so that the light can be seen. This greatly lowers the cost 
+                        of LED light bars, but the control of the bars is more difficult as the LED strips lights and grandMa don't use the same protocol
+                        to communicate.
                     </p>
                 </div>
                 <div class="description-mission">
@@ -68,8 +68,8 @@
                         One solution that our referent professor provided us is to configure a Raspberry to act as an interpreter so that the grandMa
                         and the LED strips can understand each other. To do this, we will configure the Raspberry so that it can interpret DMX frames
                         (frame format used to create lighting effects) that are sent by the grandMa over the network using the Art-Net protocol, which
-                        makes it easy to send a DMX frame over the network. Once the Raspberry has received the DMX frame, it will be able to convert
-                        it to the format that the LED strip lights uses.
+                        makes it easy to send a DMX frame over the network. Once the Raspberry has received the Art-Net frame, it will be able to extract
+                        DMX frames and convert it to the format that the LED strip lights uses.
                     </p>
                 </div>
             </div>
