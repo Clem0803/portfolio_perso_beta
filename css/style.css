@@ -323,7 +323,7 @@ footer {
     padding: 2rem 0;
 }
 
-/*----------Mise en forme du texte de présentation----------*/
+/*----------------------------------------------Mise en forme du texte de présentation-------------------------------------------*/
 
 /*Design du bloc contenant le texte de présentation*/
 .bloc-presentation {
@@ -490,7 +490,7 @@ figure {
 /*Design des boutons des vignettes*/
 .bouton-site {
     border: solid #00bcf5;
-    width: fit-content;
+    width: max-content;
     border-radius: 30px;
     padding: 10px;
     margin-left: auto;
